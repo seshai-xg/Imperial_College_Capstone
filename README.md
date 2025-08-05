@@ -1,6 +1,7 @@
-# Imperial_College_Capstone_Project
+## Imperial College Capstone Project
 ## Credit Card Fraud Detection Machine Learning Models 🧬
-## Sesha Kumar Aloor, 5th Aug 2025
+### Sesha Kumar Aloor, 5th Aug 2025
+
 ## 📌 <span style="color:purple;">Goal: </span>
 ##### Develop and compare Credit card 💳 Fraud detection models (Viz - Logistic Regression, Isolation Forest, Deep Learning) to classify fraudulent transactions accurately while handling class imbalance.
 ![Python](https://img.shields.io/badge/python-3.8+-blue?logo=python)
@@ -10,23 +11,10 @@
 A machine learning model is developed that can detect fraudulent credit card transactions using XGBoost with Bayesian optimization.
 Various other Machine Learning algorithms are optimized and tested.
 
-## 🔍 Features
-
-- 🚨 Real-time fraud prediction API
-- 📊 Optimized XGBoost model (AUC-ROC: 0.98)
-- 📈 SHAP explainability for predictions
-- 📦 Easy-to-use Flask REST API
-- 📦 Easy-to-use CSV based batch request for bulk of transactions
-
-## Installation dependencies
-pip install -r requirements.txt
-
-## 🗂️ <span style="color:purple;">Dataset</span>
-* __Source is taken from__ - [kaggle - Credit Card Fraud Transaction Data](https://www.kaggle.com/datasets/anurag629/credit-card-fraud-transaction-data/data?select=CreditCardData.csv)
-* __Each Transaction contains PCI (Payments Card Industry) related fields__ - _Transaction ID, Date, Time, Network - Visa/MasterCard, Entry Mode – Tap, PIN, Amount, Type of Transaction – Online, POS, ATM, Merchant Group, Transaction Country, Shipping Address, Billing Address, Gender of Cardholder, Age of Cardholder, Issuing Bank._
-* This Dataset contains Credit card transactions data of around 98K records
-
-## Non-Technical explanation of the solution – 
+## 📌 <span style="color:purple;">Project Overview: </span>
+This project focuses on applying supervised learning techniques to a dataset of credit card transaction samples in order to address the issue of fraud detection. The primary objective is to develop an effective binary classification model capable of accurately distinguishing between fraudulent and legitimate (non-fraudulent) transactions.
+ 
+## 👔 Non-Technical explanation of the solution:  
 Credit card fraud costs the banking businesses up to billions annually. Banks and Card issuer companies needs to detect and mitigate the dynamically evolving fraud. 
 Fraud is a continuous process that needs to be handled and prevented with continuous evolution strategies. 
 This solution acts as a prototype or a proof of concept that how a fraud can be effectively detected during real-time (transaction authorization) and also batch processing (Clearing of the transaction) process. 
@@ -55,7 +43,13 @@ _Below is a pie chart depiction of an example scenario_ -
 * Online stores - E-commerce platforms for faster checkouts
 * Payment gateways - Any payment gateway in the PCI (Payments Cards Industry) eco-system
 
-## MODEL 
+## 🗂️ <span style="color:purple;">Dataset</span>
+* __Source is taken from__ - [kaggle - Credit Card Fraud Transaction Data](https://www.kaggle.com/datasets/anurag629/credit-card-fraud-transaction-data/data?select=CreditCardData.csv)
+* __Each Transaction contains PCI (Payments Card Industry) related fields__ - _Transaction ID, Date, Time, Network - Visa/MasterCard, Entry Mode – Tap, PIN, Amount, Type of Transaction – Online, POS, ATM, Merchant Group, Transaction Country, Shipping Address, Billing Address, Gender of Cardholder, Age of Cardholder, Issuing Bank._
+* This Dataset contains Credit card transactions data of around 98K records.
+* Several Data engineering measures have been applied on this dataset and the clean dataset is obtained, which has been used for training all the Machine Learning models. Clean Data set is available @  [Clean_Dataset](https://github.com/seshai-xg/Imperial_College_Capstone/blob/main/creditcard_clean.csv)
+
+## 🧬 Model 
 After experimenting and evaluating multiple machine learning models—
    * Logistic Regression
    * Random Forest (default and Bayesian Optimization-tuned)
@@ -63,7 +57,7 @@ After experimenting and evaluating multiple machine learning models—
    * Isolation Forest (default, BO, and Optuna-tuned), and
    * Deep Learning based TabNet
 
-on the credit card fraud dataset, the <span style="color:purple;">__XGBoost model (optimized with Bayesian Optimization)__</span> demonstrated superior performance in detecting fraudulent transactions. Here’s a detailed technical justification:_
+on the credit card fraud dataset, the <span style="color:purple;">__XGBoost model (optimized with Bayesian Optimization)__</span> 🚀 demonstrated superior performance in detecting fraudulent transactions. Here’s a detailed technical justification:_
 
 * <span style="color:blue;">✅Performance Metrics -</span>
    - Precision-Recall Trade-off -
@@ -77,14 +71,22 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
 * <span style="color:blue;">✅Robustness to class imbalance -</span> XGBoost’s built-in scale_pos_weight and BO-tuned class weights mitigated bias toward the majority class, unlike Logistic Regression.
 * <span style="color:blue;">✅Outlier detection -</span> Surpassed Isolation forest in fraud recall and also every aspect of the evaluation matrix.
 
-## HYPERPARAMETER OPTIMSATION
+## 🎯Hyperparameter Optimization
 * After recognizing that XGBoost could be the best-performing algorithm for the dataset, an initial experiment was conducted using XGBoost's default hyperparameters.
 * While this default run also produced strong performance metrics, Bayesian Optimization with Expected Improvement was then applied to identify the optimal hyperparameter values.
 * A subsequent training run using the hyperparameters recommended by Bayesian Optimization achieved the highest accuracy and precision scores.
 * Below are the differences identified between the default and optimized parameters performances
 <img width="587" height="418" alt="image" src="https://github.com/user-attachments/assets/6653ab48-c63d-4f6e-b6ea-7ffb2dd70842" />
 
-## RESULTS
+## 🔍 Features
+
+- 🚨 Real-time fraud prediction API
+- 📊 Optimized XGBoost model (AUC-ROC: 0.98)
+- 📈 SHAP explainability for predictions
+- 📦 Easy-to-use Flask REST API
+- 📦 Easy-to-use CSV based batch request for bulk of transactions
+
+## 📈Results
 * The Bayesian-optimized XGBoost model was selected as the best-performing model among all experiments due to its superior accuracy, precision, and recall metrics compared to other similar models, including deep learning approaches
 * This model has outperformed in the detection of Fraud transactions trained with the given dataset. 
 * _Below are some of the results from the training run_
@@ -103,7 +105,20 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
   
 * __This interprets that Cross border transactions at certain merchant groups with higher amounts in the transactions, for certain bank cards are at higher risk.__
 
-## Recommendations
+## Resources
+
+| Resource          | Link                                                                                                   |  
+|-------------------|--------------------------------------------------------------------------------------------------------|  
+| External Dataset  | [Download from Kaggle](https://www.kaggle.com/datasets/anurag629/credit-card-fraud-transaction-data/data?select=CreditCardData.csv)    |  
+| Clean Dataset     | [Link to Clean Dataset](creditcard_clean.csv)                                                          | 
+| Model Code        | [Link to Jupyter_Notebook](Fraud_Detection_Models_Capstone_Sesha_V1_2.ipynb)                           | 
+| Model             | [Link_to_fraud_model.xgb](fraud_model.xgb)                                                             |  
+| Model Card        | [Link_to_Model_card](Credit_Card_Fraud_model_card.md)                                                  |  
+| Datasheet         | [Link_to_Datasheet](Credit_Card_data_sheet.md)                                                         |  
+
+
+
+## 🧭 Recommendations
 * As the new fraud evolves daily, the fraud prevention measures must also be dynamically evolving. And hence continous experimenting with a similar kind of dataset that resembles with real-world data is recommended.
 * The decision of identifying XG Boost as an optimal solution is just based on the charecteristics and features exhibited of this chosen dataset. 
 * This decision may gets proven wrong with any other dataset with different set of transactions. Any other algorithm may works well on a different dataset.
@@ -113,7 +128,7 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
 * Consider a cloud platform that can host a model for various benefits such as cost-effectiveness, reliability, scalability, security etc. (Eg- AWS Sagemaker is one of the best platform to build and host a business model).
 * Security to the model must be monitored. Implement security measures such as IAM (Identity Access Management) to avoid additional and unnecessary access.
 
-## Developer Details
+## 🧠 Developer Details
 This Project is developed
 - By - Sesha Aloor, UK
 - kumar.sesh@outlook.com
