@@ -82,16 +82,18 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
 * While this default run also produced strong performance metrics, Bayesian Optimization with Expected Improvement was then applied to identify the optimal hyperparameter values.
 * A subsequent training run using the hyperparameters recommended by Bayesian Optimization achieved the highest accuracy and precision scores.
 * Below are the differences identified between the default and optimized parameters performances
-* <img width="587" height="418" alt="image" src="https://github.com/user-attachments/assets/6653ab48-c63d-4f6e-b6ea-7ffb2dd70842" />
+<img width="587" height="418" alt="image" src="https://github.com/user-attachments/assets/6653ab48-c63d-4f6e-b6ea-7ffb2dd70842" />
 
 ## RESULTS
 * The Bayesian-optimized XGBoost model was selected as the best-performing model among all experiments due to its superior accuracy, precision, and recall metrics compared to other similar models, including deep learning approaches
 * This model has outperformed in the detection of Fraud transactions trained with the given dataset. 
 * _Below are some of the results from the training run_
-* <img width="564" height="428" alt="image" src="https://github.com/user-attachments/assets/dd372536-b062-42fb-8581-0dd6a98dd5d8" />
+<img width="564" height="428" alt="image" src="https://github.com/user-attachments/assets/dd372536-b062-42fb-8581-0dd6a98dd5d8" />
+
 * From the above confusion matrix, although the minor amount of errors occurs, the true positives and true negatives are high. (_We cannot expect Zeroes in the errors_).
 * Below is the feature importance idenfitied by the model
 <img width="582" height="374" alt="image" src="https://github.com/user-attachments/assets/84a568b1-b940-43f7-ad4a-5f30d768d2c6" />
+
 * The Interpretability of the model has been drawn using SHAP(SHapley Additive exPlanations)
 * Below is the top fraud risk factor identified by the SHAP
   <img width="630" height="451" alt="image" src="https://github.com/user-attachments/assets/45f32396-66bd-42b8-bfee-42b25642cb86" />
