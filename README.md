@@ -85,5 +85,35 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
 * <img width="587" height="418" alt="image" src="https://github.com/user-attachments/assets/6653ab48-c63d-4f6e-b6ea-7ffb2dd70842" />
 
 ## RESULTS
+* The Bayesian-optimized XGBoost model was selected as the best-performing model among all experiments due to its superior accuracy, precision, and recall metrics compared to other similar models, including deep learning approaches
+* This model has outperformed in the detection of Fraud transactions trained with the given dataset. 
+* _Below are some of the results from the training run_
+* <img width="564" height="428" alt="image" src="https://github.com/user-attachments/assets/dd372536-b062-42fb-8581-0dd6a98dd5d8" />
+* From the above confusion matrix, although the minor amount of errors occurs, the true positives and true negatives are high. (_We cannot expect Zeroes in the errors_).
+* Below is the feature importance idenfitied by the model
+<img width="582" height="374" alt="image" src="https://github.com/user-attachments/assets/84a568b1-b940-43f7-ad4a-5f30d768d2c6" />
+* The Interpretability of the model has been drawn using SHAP(SHapley Additive exPlanations)
+* Below is the top fraud risk factor identified by the SHAP
+  <img width="630" height="451" alt="image" src="https://github.com/user-attachments/assets/45f32396-66bd-42b8-bfee-42b25642cb86" />
+  
+* Below is the feature impact on the Fraud probability
+  <img width="627" height="467" alt="image" src="https://github.com/user-attachments/assets/33a55b83-0917-4333-a193-3b81bce10cfe" />
+  
+* __This interprets that Cross border transactions at certain merchant groups with higher amounts in the transactions, for certain bank cards are at higher risk.__
 
+## Recommendations
+* As the new fraud evolves daily, the fraud prevention measures must also be dynamically evolving. And hence continous experimenting with a similar kind of dataset that resembles with real-world data is recommended.
+* The decision of identifying XG Boost as an optimal solution is just based on the charecteristics and features exhibited of this chosen dataset. 
+* This decision may gets proven wrong with any other dataset with different set of transactions. Any other algorithm may works well on a different dataset.
+* Also this experiment recommends hybrid model to be implemented, as relying on a single algorithm is not recommended for an expensive industry like PCI.
+* Models can as well be combined with rule-based engine(Traditional rule based software), for an exponential outcome of results.
+* Cost benefit analysis must also be planned. Cost to implement the model must also be considered and compared against the top end models that outperform.
+* Consider a cloud platform that can host a model for various benefits such as cost-effectiveness, reliability, scalability, security etc. (Eg- AWS Sagemaker is one of the best platform to build and host a business model).
+* Security to the model must be monitored. Implement security measures such as IAM (Identity Access Management) to avoid additional and unnecessary access.
 
+## Developer Details
+This Project is developed
+- By - Sesha Aloor, UK
+- kumar.sesh@outlook.com
+- [Linkedin](https://www.linkedin.com/in/sesha-aloor-1260a0224/)
+- As part of Capstone Submission for Imperial College "Professional Certificate in Machine Learning and Artificial Intelligence"
