@@ -5,18 +5,19 @@
 ## 📌 <span style="color:purple;">Goal: </span>
 ##### Develop and compare Credit card 💳 Fraud detection models (Viz - Logistic Regression, Isolation Forest, Deep Learning) to classify fraudulent transactions accurately while handling class imbalance.
 
+
+## 📌 <span style="color:purple;">Project Overview: </span>
+This project focuses on applying supervised learning techniques to a dataset of credit card transaction samples in order to address the issue of fraud detection. The primary objective is to develop an effective binary classification model capable of accurately distinguishing between fraudulent and legitimate (non-fraudulent) transactions.
+
+A machine learning model is developed that can detect fraudulent credit card transactions using XGBoost with Bayesian optimization.
+Various other Machine Learning algorithms are optimized, evaluated and tested.
+
 ![Card](https://img.shields.io/badge/PCI-Fraud-red)
 ![Python](https://img.shields.io/badge/python-3.8+-blue?logo=python)
 ![ML](https://img.shields.io/badge/ml-xgboost-orange?logo=scikit-learn)
 ![BO](https://img.shields.io/badge/Bayesian-Optimization-success)
 ![SHAP](https://img.shields.io/badge/Interpret-SHAP-blue)
 ![Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
-
-A machine learning model is developed that can detect fraudulent credit card transactions using XGBoost with Bayesian optimization.
-Various other Machine Learning algorithms are optimized and tested.
-
-## 📌 <span style="color:purple;">Project Overview: </span>
-This project focuses on applying supervised learning techniques to a dataset of credit card transaction samples in order to address the issue of fraud detection. The primary objective is to develop an effective binary classification model capable of accurately distinguishing between fraudulent and legitimate (non-fraudulent) transactions.
  
 ## 👔 Non-Technical explanation of the solution:  
 Credit card fraud costs the banking businesses up to billions annually. Banks and Card issuer companies needs to detect and mitigate the dynamically evolving fraud. 
