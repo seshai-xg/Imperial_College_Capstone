@@ -21,9 +21,9 @@ Various other Machine Learning algorithms are optimized, evaluated and tested.
  
 ## 👔 Non-Technical explanation of the solution:  
 Credit card fraud costs the banking businesses up to billions annually. Banks and Card issuer companies needs to detect and mitigate the dynamically evolving fraud. 
-Fraud is a continuous process that needs to be handled and prevented with continuous evolution strategies. 
-This solution acts as a prototype or a proof of concept that how a fraud can be effectively detected during real-time (transaction authorization) and also batch processing (Clearing of the transaction) process. 
-A fraud detection system will have to proactively prevent the fraud, and at the same time legitimate transactions should not be disturbed to get processed. As such scenarios are business sensitive a high performing model is needed where it’s accuracy to detect the fraud should be high, as well as method of detecting the fraud and legitimate transactions should also be high. 
+Fraud is a continuous process that needs to be handled and prevented with continuous evolving strategies. 
+This solution acts as a prototype or a proof-of-concept that how a fraud can be effectively detected during real-time (transaction authorization) and also batch processing (Clearing of the transaction) process. 
+A fraud detection system will have to proactively prevent the fraud, and at the same time legitimate transactions should not be disturbed to get processed. As such scenarios are business critical, a high performing model is needed where it’s accuracy to detect the fraud should be high, as well as legitimate too. 
 
 The Payments Cards industry demands a very high-performing model due to its zero tolerance for financial losses from card transactions and non-financial losses that could harm organization’s reputation.
 
