@@ -10,6 +10,7 @@
 ![ML](https://img.shields.io/badge/ml-xgboost-orange?logo=scikit-learn)
 ![BO](https://img.shields.io/badge/Bayesian-Optimization-success)
 ![SHAP](https://img.shields.io/badge/Interpret-SHAP-blue)
+![Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
 
 A machine learning model is developed that can detect fraudulent credit card transactions using XGBoost with Bayesian optimization.
 Various other Machine Learning algorithms are optimized and tested.
