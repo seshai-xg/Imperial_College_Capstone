@@ -81,9 +81,8 @@ on the credit card fraud dataset, the <span style="color:purple;">__XGBoost mode
 ## 🔍 Features
 
 - 🚨 Real-time fraud prediction API
-- 📊 Optimized XGBoost model (AUC-ROC: 0.98)
+- 📊 Bayesian Optimized XGBoost model (AUC-ROC: 0.98)
 - 📈 SHAP explainability for predictions
-- 📦 Easy-to-use Flask REST API
 - 📦 Easy-to-use CSV based batch request for bulk of transactions
 
 ## 📈Results
