@@ -4,6 +4,8 @@
 
 ## 📌 <span style="color:purple;">Goal: </span>
 ##### Develop and compare Credit card 💳 Fraud detection models (Viz - Logistic Regression, Isolation Forest, Deep Learning) to classify fraudulent transactions accurately while handling class imbalance.
+
+![Card](https://img.shields.io/badge/PCI-Fraud-red)
 ![Python](https://img.shields.io/badge/python-3.8+-blue?logo=python)
 ![ML](https://img.shields.io/badge/ml-xgboost-orange?logo=scikit-learn)
 ![BO](https://img.shields.io/badge/Bayesian-Optimization-success)
