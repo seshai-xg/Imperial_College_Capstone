@@ -6,7 +6,7 @@
 ##### Develop and compare Credit card 💳 Fraud detection models (Viz - Logistic Regression, Isolation Forest, Deep Learning) to classify fraudulent transactions accurately while handling class imbalance.
 ![Python](https://img.shields.io/badge/python-3.8+-blue?logo=python)
 ![ML](https://img.shields.io/badge/ml-xgboost-orange?logo=scikit-learn)
-![API](https://img.shields.io/badge/api-flask-lightgrey?logo=flask)
+![BO](https://img.shields.io/badge/Bayesian-Optimization-success)
 
 A machine learning model is developed that can detect fraudulent credit card transactions using XGBoost with Bayesian optimization.
 Various other Machine Learning algorithms are optimized and tested.
